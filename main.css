@@ -21,21 +21,26 @@ h1{
     text-align: center;
     color: white;
 }
-form{
+.form-control{
     position: relative;
 }
 .email input, .password input{
      background: none;
      border: none;
      border-bottom: 1px solid white;
-     margin: 1.5rem 0;
+     margin: 1.7rem 0;
      width: 100%;
      outline: none;
+     display: block;
+     color: white;
+     padding: 15px;
 }
 label{
     position: absolute;
+    top: 22px;
     left: 0;
     color: white;
+    
 }
 .btn{
     padding: .5rem 2rem;
@@ -50,4 +55,14 @@ p{
     margin: .7rem 0;
     font-size: .9rem;
     text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.form-control label span{
+    display: inline-block;
+    transition: transform 0.3s ease-in
+}
+.form-control input:focus + label span, .form-control:valid + label span {
+    transform: translateY(-30px);
 }
