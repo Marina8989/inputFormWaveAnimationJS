@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: steelblue;
+}
+.container{
+    background: rgba(52, 67, 197, 0.623);
+    padding: 3rem 4rem;
+    border-radius: 5%;
+}
+h1{
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white;
+}
+form{
+    position: relative;
+}
